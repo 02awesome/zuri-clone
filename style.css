@@ -1,0 +1,392 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 400;
+    color: #212529;
+    background-color: #fff;
+}
+
+.one img{
+    margin-bottom: 6%;
+    height: 8%;
+}
+
+.one{
+    background-image: url('./hero-bg.svg') ;
+    text-align: center;
+    padding: 5%;
+    margin-bottom: 20%;
+}
+
+.one h2{
+    font-size: 3em;
+    text-align: center;
+    font-weight: 500;
+    color: #514949;
+    margin-bottom: 5%;
+}
+
+.one p{
+    font-size: 1.48em;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 7%;
+    align-content: center;
+    text-align:center;
+    font-weight: 500;
+    color: #514949;
+}
+
+.one p a{
+    text-decoration: none;
+    color: #e7332b;
+    
+}
+
+.one #buts{
+    margin: auto;
+    padding-bottom: 10%;
+}
+
+.one #buts #buts1{
+    background-color: #e7332b;
+    border: 1px solid #e7332b;
+    color: #FFFAFA;
+    font-size: 1.5em;
+    margin-right: 1.5%;
+    width: 17em;
+    height: 3em;
+}
+
+.one #buts #buts1:active {
+    background-color: #FFFAFA;
+    border: 1px solid #514949;
+    color: #e7332b;
+}
+
+.one #buts #buts2 {
+    background-color: #fff;
+    border: 1px solid #e7332b;
+    color: #e7332b;
+    font-size: 1.5em;
+    margin-left: 1.5%;
+    width: 17em;
+    height: 3em;
+}
+
+.one #buts #buts2:active{
+    background-color: #e7332b;
+    border: 1px solid #e7332b;
+    color: #FFFAFA;
+}
+
+.two{
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 8%;
+}
+
+.two h5{
+    font-size: 1.5em ;
+    font-weight: 550;
+    color: #e7332b;
+    margin-bottom: 2em;
+}
+
+.two p{
+    color: #514949;
+    font-size:  2.5em;
+    font-weight: 495;
+}
+
+.box{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+    justify-content: space-between;
+}
+
+ .four, .five {
+    width: 100%;
+    font-size: 1.67em;
+    font-weight: 500;
+    background-color: #FFFAFA;
+    text-align: justify-all;
+    padding: 2em;
+    margin-left: 2em;  
+}
+
+.three{
+    width: 100%;
+    font-size: 1.67em;
+    font-weight: 500;
+    background-color: #FFFAFA;
+    text-align: justify-all;
+    padding: 2em;
+    
+}
+
+.box .three img, .box .four img, .box .five img{
+    height: 5em;
+    margin-bottom: 2em;
+}
+
+.box .three p,
+.box .four p,
+.box .five p{
+    padding-bottom: 15%;
+    color: #514949;
+}
+
+.box .three a,
+.box .four a,
+.box .five a{
+    text-decoration: none;
+    color: #e7332b;
+}
+
+.six{
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    width: 95%;
+    margin-top: 15%;
+    margin-bottom: 8%;
+}
+
+#zu img{
+    height: 1.8em;
+}
+
+#link h4{
+    color: #514949;
+    font-size: 1.8em;
+    font-weight: 500;
+}
+
+
+#link li{
+    list-style-type: none;
+    color: #e7332b;
+    font-size: 1.6em;
+    padding-top: .8em;
+}
+
+#cont h4{
+    color: #514949;
+    padding-bottom: .8em;
+    font-size: 1.8em;
+    font-weight: 500;
+}
+
+#cont p {
+    color: #514949;
+    padding-bottom: .8em;
+    font-size: 1.5em;
+}
+
+#cont a{
+    text-decoration: none;
+    color: #e7332b;
+    font-size: 1.5em;
+}
+
+#follow h4 {
+    color: #514949;
+    font-size: 1.8em;
+    font-weight: 500;
+}
+
+#follow #icons img{
+    height: 1.2em;
+}
+
+#follow #icons a{
+    margin-right: .4em;
+}
+
+footer{
+    align-items: center;
+}
+
+.foot{
+    /* margin-top: 10%; */
+    text-align: center;
+    width: 95%;
+    margin: auto;
+    border-top: .4em solid #ebebeb;
+    padding: 2em;
+    padding-bottom: 5%;
+        
+}
+
+.foot p{
+    font-weight: 500;
+    font-size: 1.5em;
+    margin-bottom: 6%;
+    margin-top: 1.5%;
+}
+
+@media screen and (max-width: 768px){
+    .one{
+        display: grid;
+        align-items: center;
+        align-content: center;
+        margin: auto;
+    }
+
+    .one img {
+        margin-bottom: 10%;
+        margin-top: 10%;
+        justify-self: center;
+        height: 1em;
+    }
+
+    .one h2{
+        font-size: 1.5em;
+    }
+    
+    .one p {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 7%;
+        align-content: center;
+        text-align: center;
+        font-size: .95em;
+        font-weight: 500;
+        color: #514949;
+    }
+    
+    .one #buts{
+        display: grid;
+        justify-items: center;
+    }
+
+    .one #buts #buts1 {
+        width: 13em;
+        margin-right: 0;
+        font-size: .9em;
+        align-content: center;
+    }
+
+    .one #buts #buts2 {
+        margin-left: 0;
+        font-size: .9em;
+        width: 15em;
+    }
+
+    .two {
+        margin-top: 0%;
+    }
+
+    .two h5{
+        margin-top: 8%;
+        font-size: .9em;
+    }
+
+    .two p{
+        margin-bottom: 12%;
+        font-size: 1.5em;
+
+    }
+
+    .box{
+        display: grid;
+    }
+
+    .three,
+    .four,
+    .five {
+        justify-content: space-around;
+        width: 85%;
+        margin-bottom: 8%;
+        margin-left: 0;
+    }
+
+    .box .three img,
+    .box .four img,
+    .box .five img {
+        height: 3.3em;
+        margin-bottom: 2em;
+    }
+    
+    .box .three p,
+    .box .four p,
+    .box .five p {
+        padding-bottom: 15%;
+        color: #514949;
+        font-size: .56em;
+    }
+
+    .box .three a,
+    .box .four a,
+    .box .five a {
+         text-decoration: none;
+         color: #e7332b;
+         font-size: .56em;
+    }
+
+    .six{
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .six #zu{
+        margin-bottom: 15%;
+    }
+
+    .six #zu img{
+        height: 1.53em;
+    }
+
+    .six #link{
+        margin-bottom: 18%;
+    }
+
+    .six #link h4{
+        font-size: 1.5em;
+        font-weight: 500;
+    }
+
+    .six #link li{
+        font-size: 1.1em;
+        font-weight: 400;
+    }
+
+    .six #cont {
+        text-align: center;
+    }
+
+
+    .six #cont h4{
+        font-size: 1.6em;
+        font-weight: 500;
+        margin-bottom: 0%;
+        text-align: center;
+
+    }
+
+    .six #follow{
+        margin-top: 10%;
+    }
+
+    .six #follow h4{
+        font-size: 1.5em;
+        font-weight: 500;
+    }
+
+
+}
+
