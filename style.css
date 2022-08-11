@@ -3,6 +3,8 @@
 * {
     margin: 0;
     padding: 0;
+    /* box-sizing: border-box; */
+    /* font-family: Averta, sans-serif */
     
 }
 
@@ -19,30 +21,41 @@ body {
     height: 8%;
 }
 
+.oneall{
+    background-image: url('./hero-bg.svg');
+    background-size: cover;
+    background-size: stretch;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .one{
-    background-image: url('./hero-bg.svg') ;
     text-align: center;
     padding: 5%;
     margin-bottom: 20%;
+    max-width: 1440px;
+    margin: auto;
 }
 
 .one h2{
-    font-size: 3em;
+    font-size: 2em;
     text-align: center;
-    font-weight: 500;
+    font-weight: 600;
+    margin-bottom: 1em;
     color: #514949;
-    margin-bottom: 5%;
+    opacity: 0.9;
 }
 
 .one p{
-    font-size: 1.48em;
-    margin-left: 20%;
-    margin-right: 20%;
+    font-size: 1em;
+    width: 55%;
+    margin: auto;
     margin-bottom: 7%;
     align-content: center;
     text-align:center;
     font-weight: 500;
     color: #514949;
+    opacity: 0.9;
 }
 
 .one p a{
@@ -52,6 +65,7 @@ body {
 }
 
 .one #buts{
+    width: 45%;
     margin: auto;
     padding-bottom: 10%;
 }
@@ -60,10 +74,10 @@ body {
     background-color: #e7332b;
     border: 1px solid #e7332b;
     color: #FFFAFA;
-    font-size: 1.5em;
-    margin-right: 1.5%;
-    width: 17em;
-    height: 3em;
+    font-size: 1em;
+    margin-right: 1%;
+    width: 40%;
+    height: 2.5em;
 }
 
 .one #buts #buts1:active {
@@ -76,10 +90,10 @@ body {
     background-color: #fff;
     border: 1px solid #e7332b;
     color: #e7332b;
-    font-size: 1.5em;
-    margin-left: 1.5%;
-    width: 17em;
-    height: 3em;
+    font-size: 1em;
+    margin-left: 1%;
+    width: 45%;
+    height: 2.5em;
 }
 
 .one #buts #buts2:active{
@@ -90,25 +104,37 @@ body {
 
 .two{
     text-align: center;
-    margin-top: 10%;
-    margin-bottom: 8%;
+    max-width: 1440px;
+    margin: auto;
+    margin-top: 13%;
+    margin-bottom: 5%;
 }
 
 .two h5{
-    font-size: 1.5em ;
-    font-weight: 550;
+    font-size: 1em ;
+    font-weight: 500;
     color: #e7332b;
     margin-bottom: 2em;
 }
 
 .two p{
     color: #514949;
-    font-size:  2.5em;
+    font-size:  1.7em;
     font-weight: 495;
 }
 
+.boxall{
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+    justify-content: space-between;
+}
+
 .box{
-    width: 90%;
+    width: 85%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -119,7 +145,7 @@ body {
 
  .four, .five {
     width: 100%;
-    font-size: 1.67em;
+    font-size: 1em;
     font-weight: 500;
     background-color: #FFFAFA;
     text-align: justify-all;
@@ -129,7 +155,7 @@ body {
 
 .three{
     width: 100%;
-    font-size: 1.67em;
+    font-size: .95em;
     font-weight: 500;
     background-color: #FFFAFA;
     text-align: justify-all;
@@ -147,6 +173,7 @@ body {
 .box .five p{
     padding-bottom: 15%;
     color: #514949;
+    opacity: 0.9;
 }
 
 .box .three a,
@@ -156,22 +183,27 @@ body {
     color: #e7332b;
 }
 
+.sixall{
+    max-width: 1440px;
+    margin: auto;
+}
+
 .six{
     display: flex;
     margin: auto;
     justify-content: space-between;
-    width: 95%;
+    width: 85%;
     margin-top: 15%;
     margin-bottom: 8%;
 }
 
 #zu img{
-    height: 1.8em;
+    height: 1.2em;
 }
 
 #link h4{
     color: #514949;
-    font-size: 1.8em;
+    font-size: 1.2em;
     font-weight: 500;
 }
 
@@ -179,33 +211,35 @@ body {
 #link li{
     list-style-type: none;
     color: #e7332b;
-    font-size: 1.6em;
+    font-size: 1em;
+    font-weight: 500;
     padding-top: .8em;
 }
 
 #cont h4{
     color: #514949;
     padding-bottom: .8em;
-    font-size: 1.8em;
+    font-size: 1.2em;
     font-weight: 500;
 }
 
 #cont p {
     color: #514949;
     padding-bottom: .8em;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 #cont a{
     text-decoration: none;
     color: #e7332b;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 #follow h4 {
     color: #514949;
-    font-size: 1.8em;
+    font-size: 1.2em;
     font-weight: 500;
+    padding-bottom: 1em;
 }
 
 #follow #icons img{
@@ -221,11 +255,10 @@ footer{
 }
 
 .foot{
-    /* margin-top: 10%; */
     text-align: center;
     width: 95%;
     margin: auto;
-    border-top: .4em solid #ebebeb;
+    border-top: .2em solid #ebebeb;
     padding: 2em;
     padding-bottom: 5%;
         
@@ -233,37 +266,46 @@ footer{
 
 .foot p{
     font-weight: 500;
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin-bottom: 6%;
     margin-top: 1.5%;
+    opacity: 0.9;
 }
 
 @media screen and (max-width: 768px){
+
+
     .one{
         display: grid;
+        justify-content: center;
+        text-align: center;
         align-items: center;
-        align-content: center;
         margin: auto;
+        /* width: 768px; */
     }
 
     .one img {
-        margin-bottom: 10%;
-        margin-top: 10%;
+        margin-bottom: 15%;
+        margin-top: 13%;
         justify-self: center;
-        height: 1em;
+        height: 1.5em;
     }
 
     .one h2{
-        font-size: 1.5em;
+        font-size: 1.8em;
+        padding-bottom: 1em;
+        /* width: 50%; */
+        margin: auto;
     }
     
     .one p {
-        width: 90%;
+        width: 95%;
         margin: auto;
-        margin-bottom: 7%;
+        margin-bottom: 12%;
+        line-height: 1.5em;
         align-content: center;
         text-align: center;
-        font-size: .95em;
+        font-size: 1em;
         font-weight: 500;
         color: #514949;
     }
@@ -271,19 +313,22 @@ footer{
     .one #buts{
         display: grid;
         justify-items: center;
+        padding-bottom: 2em;
     }
 
     .one #buts #buts1 {
         width: 13em;
+        height: 3em;
         margin-right: 0;
-        font-size: .9em;
+        font-size: 1.1em;
         align-content: center;
     }
 
     .one #buts #buts2 {
         margin-left: 0;
-        font-size: .9em;
+        font-size: 1.1em;
         width: 15em;
+        height: 3em;
     }
 
     .two {
@@ -298,18 +343,20 @@ footer{
     .two p{
         margin-bottom: 12%;
         font-size: 1.5em;
+        line-height: 2em;
 
     }
 
     .box{
         display: grid;
+        margin-bottom: 12%; ;
     }
 
     .three,
     .four,
     .five {
         justify-content: space-around;
-        width: 85%;
+        width: 95%;
         margin-bottom: 8%;
         margin-left: 0;
     }
@@ -317,8 +364,8 @@ footer{
     .box .three img,
     .box .four img,
     .box .five img {
-        height: 3.3em;
-        margin-bottom: 2em;
+        height: 7em;
+        margin-bottom: 2.5em;
     }
     
     .box .three p,
@@ -326,7 +373,8 @@ footer{
     .box .five p {
         padding-bottom: 15%;
         color: #514949;
-        font-size: .56em;
+        font-size: 1.05em;
+        padding-bottom: 1em;
     }
 
     .box .three a,
@@ -334,7 +382,7 @@ footer{
     .box .five a {
          text-decoration: none;
          color: #e7332b;
-         font-size: .56em;
+         font-size: 1.1em;
     }
 
     .six{
@@ -389,4 +437,3 @@ footer{
 
 
 }
-
