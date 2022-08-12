@@ -5,8 +5,17 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Rubik", sans-serif;
-    /* overflow-x: hidden; */
     scroll-behavior: smooth;
+}
+
+.headd{
+    position: fixed;
+    background-color: white;
+    right: 0;
+    left: 0;
+    top: 0;
+    padding: 2.5em 0em 2.5em 0em;
+    width: 100%;
 }
 
 
@@ -19,7 +28,8 @@
     display: flex;
     justify-content: space-between;
     padding: 1em 0em 1em 0em;
-    width: 100%;
+    max-width: 1440px;
+    margin: auto;
 }
 
 .logo img{
@@ -55,7 +65,7 @@
     border-bottom-right-radius: .5em;
 }
 
-@media screen and (max-width: 888px){
+@media screen and (max-width: 890px){
     .nav-bar {
             display: flex;
             justify-content: space-between;
@@ -81,13 +91,16 @@ main{
 
 
 .bigone{
+    max-width: 1440px;
+    margin: auto;
     display: flex;
-    margin-left: 0%;
+    flex-direction: column;
+    /* margin-left: 0%; */
 }
 
 .one{
     display: flex;
-    width: 90%;
+    width: 85%;
     margin: auto;
     justify-content: space-between;
     margin-bottom: 10%;
@@ -98,7 +111,7 @@ main{
 }
 
 .oneii img{
-    height: 28em;
+    height: 30em;
 }
 
 .one .onei #lineadjust h2{
@@ -155,19 +168,71 @@ b{
     background-color: #665b5b;
 }
 
+@media screen and (max-width: 1199px){
+    .one{
+        display: block;
+        text-align: center;
+        align-self: center;
+        justify-content: center;
+        padding-top: 5%;
+    }
+
+    #lineadjust h2{
+        margin-bottom: 3%;
+    }
+
+    .onei p{
+        width: 60%;
+        margin: auto;
+        text-align: center;
+        align-self: center;
+        justify-content: center;
+        padding-bottom: 3%;
+        opacity: 0.7;
+    }
+
+    .onebutton{
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        margin-bottom: 5%;
+    }
+
+    #but1 {
+        font-size: 1em;
+        padding: .7em 0 .7em 0;
+        border-bottom-right-radius: .5em;
+    }
+    
+    
+    
+    #but2 {
+        margin-left: 0%;
+        font-size: 1em;
+        padding: .7em 0 .7em 0;
+        border-bottom-right-radius: .5em;
+    }
+
+    .oneii img{
+        height:70%;
+        width: 70%;
+    }
+}
+
 .twoback{
     background-image: url('./map background.png');
-    /* background-repeat: no-repeat; */
-    background-size:contain;
+    background-size:cover;
+    background-repeat: no-repeat;
 }
 
 .two{
     padding-top: 8.5%;
     padding-bottom: 10%;
     display: flex;
-    width: 90%;
+    max-width: 1440px;
+    width: 85%;
     margin: auto;
-    justify-content: space-between;
 }
 
 .twoi{
@@ -207,8 +272,53 @@ b{
     border-radius: .7em;
 }
 
+@media screen and (max-width: 899px) {
+    .two {
+        display: grid;
+        text-align: center;
+        align-self: center;
+        justify-content: center;
+        padding-top: 5%;
+    }
+
+    .twoi{
+        width: 100%;
+        margin: auto;
+    }
+
+    .twoi h1{
+        text-align: center;
+        width: 80%;
+        line-height: 2em;
+        margin: auto;
+
+    }
+
+    .twoii{
+        margin-top: 8%;
+    }
+
+    .twoii img{
+        height: 90%;
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 1199px){
+
+    .two{
+        padding-bottom: 15%;
+    }
+    
+    .twoi h1 {
+        font-size: 1.8em;
+        
+     }
+}
+
 .three{
-    max-width: 90%;
+    max-width: 1440px;
+    width: 85%;
     margin: auto;
     padding-top: 7%;
     padding-bottom: 7%;
@@ -231,24 +341,83 @@ b{
 }
 
 
-.threeii #bu #butt {
+#butt {
     width: 11em;
+    text-align: center;
     font-size: 1.15em;
     color: #787878;
     background-color: #ffffff;
-    padding: .5em;
-    margin-right: .5em;
+    padding: .9em 0 .9em 0;
+    margin-right: 1.4em;
+    margin-bottom: 1em;
     border: none;
     border-radius: .3em;
     box-shadow: .15em .15em 1.7em .3em hsla(0, 0%, 48%, .16);
     transition: box-shadow 0.3s ease-in-out;
 }
 
-#bu:hover {
-    margin-top: -2em;
+.bu:hover {
+    margin-top: -1em;
+    margin-bottom: 1em;
     transition: margin 0.3s ease-in-out;
 }
 
+
+@media screen and (max-width: 599px){
+    .threei h2{
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    .threeii {
+        display: grid;
+        grid-template-areas:
+        'a b'
+        'c d';
+        gap: 10px;
+        width: 100%;
+        margin: auto;
+        align-content: center;
+    }
+    
+    #bu1 {
+        grid-area: a;
+        width: 100%;
+    }
+    
+    #bu2 {
+        grid-area: b;
+        width: 100%;
+    }
+    
+    #bu3 {
+        grid-area: c;
+        width: 100%;
+    }
+    
+    #bu4 {
+        grid-area: d;
+        width: 100%;
+    }
+    
+    #butt{
+        width: 100%;
+        margin-bottom: 0%;
+        text-align: center;
+        padding: 7% 15% 7% 15%;
+    }
+
+    .four{
+        display: grid;
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+    }
+
+    #boxer{
+        width: 100%;
+    }
+    
+}
 
 
 .threeiii h2 {
@@ -267,27 +436,119 @@ b{
 }
 
 
-.threeiv #tbut #buttt {
+ #buttt {
     font-size: 1.15em;
     text-align: justify;
     width:fit-content;
     color: #787878;
     background-color: #ffffff;
-    padding: .65em;
-    margin-right: 1em;
+    padding: .9em 1em .9em 1em ;
+    margin-right: .7em;
+    margin-bottom: 1em;
     border: none;
     border-radius: .3em;
     box-shadow: .15em .15em 1.7em .3em hsla(0, 0%, 48%, .16);
     transition: box-shadow 0.3s ease-in-out;
 }
 
-#tbut:hover {
-    margin-top: -2em;
+.tbu:hover {
+    margin-top: -1em;
+    margin-bottom: 1em;
     transition: margin 0.3s ease-in-out;
 }
 
-.four{
+
+@media screen and (max-width: 899px) {
+    .threeiii h2{
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .threeiv {
+        display: grid;
+        grid-template-areas:
+        'a b'
+        'c d'
+        'e f';
+        gap: 10px;
+        width: 100%;
+        margin: auto;
+        align-content: center;
+    }
+    
+    #tbut1{
+        grid-area: a;
+        width: 100%;
+    }
+
+    #tbut2 {
+        grid-area: b;
+        width: 100%;
+    }
+
+    #tbut3 {
+        grid-area: c;
+        width: 100%;
+    }
+
+    #tbut4 {
+        grid-area: d;
+        width: 100%;
+    }
+
+    #tbut5 {
+        grid-area: e;
+        width: 100%;
+        
+    }
+
+    #tbut6 {
+        grid-area: f;
+        width: 100%;
+    }
+
+    #buttt{
+        width: 100%;
+        margin-bottom: 0%;
+        text-align: center;
+    }
+
+    
+}
+
+
+@media screen and (max-width: 1199px){
+    .threei h2 {
+        font-size: 1.8em;
+}
+
+    .threeii #bu #butt {
+        width: 13em;
+        font-size: 1.1em;
+        padding: .9em 1em .9em 1em;
+}
+
+    .threeiii h2 {
+        font-size: 1.8em;
+}
+
+    .threeiv #tbut #buttt {
+        font-size: 1.1em;
+        width: fit-content;
+        padding: .9em 1.6em .9em 1.6em;
+        margin-right: .9em;
+}
+
+}
+
+.fourback{
     background-color: #fff8e5;
+}
+
+.four{
+    max-width: 1440px;
+    width: 85%;
+    margin: auto;
     padding-bottom: 7%;
 }
 
@@ -299,7 +560,7 @@ b{
 }
 
 .fourii{
-    width: 90%;
+    width: 100%;
     margin: auto;
     display: flex;
     flex-direction: row;
@@ -311,44 +572,121 @@ b{
 
 .box1, .box2, .box3, .box4, .box5{
     width: 30%;
-    margin-right: 1%;
-    margin-bottom: 2%;
+    margin-left: 0%;
+    margin-right: 1.5%;
+    margin-bottom: 3%;
     align-items: center;
     background-color: #fff;
     border-radius: 0 0 1em 0;
     color: #787878;
-    justify-content: center;
     text-align: center;
     padding: 4em 2em 4em 2em;
-    font-size: 1.15em;
+    font-size: 1.1em;
     font-weight: 500;
 }
 
+.box1 p,
+.box2 p,
+.box3 p,
+.box4 p,
+.box5 p {
+    margin-bottom: -1em ;
+}
+
+.fourii img{
+    margin-bottom: 1em;
+}
+
+#boxer:hover{
+    background-color: #161617;
+    box-shadow: 0 8px 30px hsl(0deg 0% 69% / 7%);
+    color: #fff;
+    
+}
+
+@media screen and (max-width:599px) {
+    .fourii{
+        display: grid;
+        width: 90%;
+        margin: auto;
+    }
+
+    #boxer{
+        width: 90%;
+    }
+    
+}
+
+@media screen and (max-width: 1199px){
+    .fourii{
+        display: flex;
+        flex-direction: row;
+        flex-flow: row wrap;
+        flex-wrap: wrap;
+        width: 95%;
+    }
+
+    .box1, .box2, .box3, .box4{
+        width: 40%;
+    }
+
+    .box5{
+        width: 82%;
+    }
+}
+
+@media screen and (max-width:599px){
+    .five {
+        width: 50%;
+    }
+
+    #button1{
+        width: 40%;
+        text-align: center;
+    }
+
+    #button2{
+        width: 40%;
+        
+    }
+}
+
 .five{
-    width: 26.5%;
+    width: 100%;
     margin: auto;
     display: flex;
-    justify-content: space-between;
+    text-align: center;
+    justify-content: center;
 }
 
 #button1{
+    width: 15%;
+    margin-right: 1%;
     background-color: #e7332b;
     color: #ffffff;
     padding: .5em 2.5em .5em 2.5em;
     border-bottom-right-radius: .4em;
     cursor: pointer;
+    box-shadow: rgb(0 0 0 / 20%) 0px 3px 1px -2px, rgb(0 0 0 / 14%) 0px 2px 2px 0px, rgb(0 0 0 / 12%) 0px 1px 5px 0px;
 }
 
 #button2{
+    width: 17%;
     background-color: #585858;
     color: #ffffff;
     padding: .5em 2.5em .5em 2.5em;
     border-bottom-right-radius: .4em;
     cursor: pointer;
+    box-shadow: rgb(0 0 0 / 20%) 0px 3px 1px -2px, rgb(0 0 0 / 14%) 0px 2px 2px 0px, rgb(0 0 0 / 12%) 0px 1px 5px 0px;
+}
+
+.boxers:active{
+    opacity: 0.6;
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
 }
 
 footer{
-    /* display: flex; */
     background-color: rgb(22, 22, 23);
     padding-top: 80px;
     padding-bottom: 1em;
@@ -381,4 +719,48 @@ footer{
 
 #right p{
     color: #ffffff;
+}
+
+@media screen and (max-width: 599px){
+    .foot{
+        display: grid;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        margin: auto;
+        justify-content: center;
+        justify-items: center;
+        justify-self: center;
+        align-self: center;
+        align-content: center;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .nav-bar {
+        display: flex;
+        justify-content: space-between;
+        padding: 1em 0em 1em 0em;
+        width: 100%;
+    }
+    
+    .logo img {
+        height: 1em;
+        margin-left: 30%;
+        margin-top: 17%;
+    }
+
+    main{
+        margin-top: 30%;
+    }
+
+        .navlinks li {
+            list-style-type: none;
+            font-size: 1em;
+        }
+    
+        .navlinks li a {
+            font-size: .7em;
+        }
+
 }
